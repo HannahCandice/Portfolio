@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hannah Candice S | Professional Portfolio</title>
+
+<style>
+:root{
+    --dark:#111827;
+    --gray:#6b7280;
+    --accent:#2563eb;
+    --bg:#f3f4f6;
+    --card:#ffffff;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont;
+}
+body{
+    background:var(--bg);
+}
+
+/* LAYOUT */
+.wrapper{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+.sidebar{
+    background:var(--dark);
+    color:white;
+    padding:40px 30px;
+}
+.sidebar h1{
+    font-size:1.6rem;
+}
+.sidebar p{
+    color:#9ca3af;
+    margin:10px 0 25px;
+    font-size:.9rem;
+}
+.sidebar section{
+    margin-bottom:30px;
+}
+.sidebar h3{
+    font-size:.85rem;
+    text-transform:uppercase;
+    margin-bottom:12px;
+    letter-spacing:1px;
+}
+.sidebar span{
+    display:block;
+    font-size:.9rem;
+    margin-bottom:6px;
+}
+
+/* MAIN */
+.main{
+    padding:50px 60px;
+}
+.block{
+    background:var(--card);
+    padding:35px;
+    border-radius:10px;
+    margin-bottom:30px;
+}
+.block h2{
+    font-size:1.4rem;
+    margin-bottom:20px;
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.skill{
+    background:#eef2ff;
+    color:var(--accent);
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:.85rem;
+}
+
+/* TIMELINE */
+.item{
+    margin-bottom:20px;
+}
+.item h4{
+    font-size:1rem;
+}
+.item span{
+    font-size:.85rem;
+    color:var(--gray);
+}
+.item p{
+    margin-top:6px;
+    font-size:.9rem;
+    color:#374151;
+}
+
+/* LINKS */
+a{
+    color:var(--accent);
+    text-decoration:none;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .wrapper{
+        grid-template-columns:1fr;
+    }
+    .main{
+        padding:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <h1>Hannah Candice S</h1>
+    <p>BSc Computer Science Student</p>
+
+    <section>
+        <h3>Contact</h3>
+        <span>📧 hannahcandice03@gmail.com</span>
+        <span>📞 +91 90801 95732</span>
+        <span>🌐 <a href="https://github.com/HannahCandice" target="_blank">GitHub</a></span>
+    </section>
+
+    <section>
+        <h3>Languages</h3>
+        <span>English</span>
+        <span>Tamil</span>
+        <span>Malayalam</span>
+        <span>Hindi</span>
+        <span>French (Basic)</span>
+    </section>
+
+    <section>
+        <h3>Soft Skills</h3>
+        <span>Teamwork</span>
+        <span>Responsibility</span>
+        <span>Adaptability</span>
+    </section>
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+
+    <div class="block">
+        <h2>Profile</h2>
+        <p>
+        Computer Science student with strong interest in AR/VR development,
+        3D modeling, and web application development. Hands-on experience
+        through internships involving Blender, Unity, Laravel, and MySQL.
+        Passionate about learning emerging technologies and applying them
+        to real-world problems.
+        </p>
+    </div>
+
+    <div class="block">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">PHP</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Unity (AR/VR)</div>
+            <div class="skill">Blender</div>
+            <div class="skill">Canva</div>
+        </div>
+    </div>
+
+    <div class="block">
+        <h2>Education</h2>
+        <div class="item">
+            <h4>BSc Computer Science</h4>
+            <span>PSGR Krishnammal College for Women | 2023 – 2026</span>
+            <p>CGPA: 7.5</p>
+        </div>
+        <div class="item">
+            <h4>Higher Secondary</h4>
+            <span>St. Joseph’s Matric Hr. Sec. School | 2021 – 2023</span>
+            <p>Score: 67.8%</p>
+        </div>
+    </div>
+
+    <div class="block">
+        <h2>Experience</h2>
+        <div class="item">
+            <h4>Appville Software</h4>
+            <span>Intern – 3D Modeling (AR) | Jul 2025 – Sep 2025</span>
+            <p>
+            Created and optimized 3D assets for AR applications using Blender,
+            focusing on performance and visual quality.
+            </p>
+        </div>
+        <div class="item">
+            <h4>5K Car Care Pvt. Ltd.</h4>
+            <span>Intern – Software Development | May 2025 – Jun 2025</span>
+            <p>
+            Worked on HRM software using Laravel and MySQL.
+            Assisted in payroll and attendance automation.
+            </p>
+        </div>
+    </div>
+
+</main>
+</div>
+
+</body>
+</html>
